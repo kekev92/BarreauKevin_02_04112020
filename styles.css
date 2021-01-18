@@ -74,13 +74,10 @@ nav a:nth-child(2) {
 }
 
 .navbar-desktop a:hover{
-  border-top: blue 3px solid;
+text-decoration: overline 2px blue solid;
  
-  
 }
-.navbar-desktop{
 
-}
   
 
 /* nav a:first-child {
@@ -153,17 +150,11 @@ button::before {
 .filtres {
   display: flex;
   margin-top: 15px;
-  margin-bottom: 30px;
+  margin-bottom:  30px;
   position: relative;
 }
-.filtres a:hover {
-  transition: 3s;
-  background-color:lightgray;
-  transform: scale(1.2);
-  border-radius: 200px;
-  cursor: pointer;
-}
 
+    
 .filtres h2:first-child {
   display: flex;
   text-align: center;
@@ -177,13 +168,13 @@ button::before {
 .h2-filtre {
   border: 2px solid #f2f2f2;
   border-radius: 27px;
-  padding-right: 15px;
-  
-}
-.h2-filtre :hover {
+  padding-right: 35px;
+  }
+
+.filtres :hover {
   color:blue;
   text-decoration:none;
-  background-color:rgb(0, 0, 0);
+  transform:scale(1) ;
 }
 
 .h2-filtre .fas {
@@ -276,6 +267,7 @@ p .fa-info {
   order: 1;
 }
 
+
 .aside-populaire .card-aside {
   display: flex;
   width: 340px;
@@ -307,7 +299,7 @@ i.fa-chart-line {
 
 /* SECTION ACTIVITE */
 
-.second-section h1 {
+.second-section h2 {
   margin-top: 60px;
   margin-bottom: 20px;
 }
