@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
+  color: black;
 }
 
 .container {
@@ -68,15 +69,23 @@ nav a {
   color: #0065fc;
 }
 
+
 nav a:first-child,
-nav a:nth-child(2) {
-  padding-right: 60px;
+nav a:nth-child(2){
+  margin-right: 60px;
+  padding: 41px 20px 0 20px
+  
 }
 
-.navbar-desktop a:hover{
-text-decoration: overline 2px blue solid;
- 
+.navbar-desktop a:nth-child(1) {
+border-top: 2px solid #0065fc;
 }
+
+nav a:first-child,
+nav a:nth-child(2):hover {
+  border-top: 2px solid #0065fc;
+}
+
 
   
 
@@ -188,13 +197,16 @@ button::before {
 
 p .fa-info {
   border: 1px solid #f2f2f2;
-  border-radius: 50%;
+  border-radius: 48%;
   color: #0065fc;
   padding: 5px 10px;
 }
 
 /* SECTION */
 
+h2.hidden{
+visibility: hidden;
+}
 .first-section {
   display: flex;
   justify-content: space-between;
@@ -321,7 +333,7 @@ i.fa-chart-line {
   border-radius: 20px 20px 20px 20px;
   box-shadow: 3px 3px 10px #85808036;
   background-color: #fff;
-}
+ }
 
 .section-activite .card-activite h3 {
   padding: 10px 0 15px 15px;
@@ -407,6 +419,7 @@ MEDIA QUERIES
     width: 100%;
     margin-bottom: 40px;
   }
+  
 
   .flex-aside {
     justify-content: start;
@@ -461,6 +474,9 @@ MEDIA QUERIES
   }
   .flex-small-img{
     order:1;
+  }
+  .aside-populaire H2 .first-section{
+    padding-left: 15px;
   }
 }
 
