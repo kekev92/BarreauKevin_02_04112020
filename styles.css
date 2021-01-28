@@ -25,6 +25,10 @@ a {
 /* /////////////////
       HEADER
 /////////////////// */
+nav a :first-child{
+  text-decoration: #0065fc;
+}
+
 h1,
 h2,
 h3 {
@@ -65,17 +69,20 @@ img#logo {
   align-content: center;
   justify-content: center;
 }
-nav a {
+nav a :first-child {
   color: #0065fc;
 }
+
 
 
 nav a:first-child,
 nav a:nth-child(2){
   margin-right: 60px;
-  padding: 41px 20px 0 20px
-  
-}
+  padding: 41px 20px 0 20px;
+  color: #0065fc;
+  }
+  nav a:nth-child(2){
+    color: black; }
 
 .navbar-desktop a:nth-child(1) {
 border-top: 2px solid #0065fc;
@@ -226,13 +233,14 @@ visibility: hidden;
 }
 
 /* SECTION HEBERGEMENT */
-
 .section-hebergement {
   background-color: #f2f2f2;
   max-width: 860px;
   border-radius: 25px;
   padding: 30px;
+  margin-right: 15px;
 }
+
 
 .herbergment-h1 {
   margin-bottom: 20px;
@@ -263,6 +271,10 @@ visibility: hidden;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
+.div-flex-card .card a:hover{
+  transform: scale(1.03);
+
+}
 
 .div-flex-card .card h3,
 .card p,
@@ -272,14 +284,20 @@ visibility: hidden;
 
 /* ASIDE POPULAIRE */
 
+.flex-aside{
+  padding-right: 20px;
+}
+
 .aside-populaire {
   background-color: #f2f2f2;
   border-radius: 25px;
-  width: 400px;
+  width: 450px;
   order: 1;
 }
 
-
+.aside-populaire .fa-star{
+  padding-top: 55px;
+}
 .aside-populaire .card-aside {
   display: flex;
   width: 340px;
@@ -333,6 +351,7 @@ i.fa-chart-line {
   border-radius: 20px 20px 20px 20px;
   box-shadow: 3px 3px 10px #85808036;
   background-color: #fff;
+  margin-top: 38px;
  }
 
 .section-activite .card-activite h3 {
@@ -343,6 +362,7 @@ i.fa-chart-line {
   width: 300px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
+  
 }
 
 .section-activite .card-activite .img-large {
@@ -413,6 +433,10 @@ MEDIA QUERIES
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .fa-search{
+    color: white;
   }
 
   .aside-populaire {
@@ -635,6 +659,13 @@ MEDIA QUERIES
     display: block;
   }
 
+  .section-activite .card-activite{
+    padding-top: 30px;
+  }
+  
+  
+  
+
   .section-activite .card-activite img {
     width: 100%;
   }
@@ -657,7 +688,5 @@ MEDIA QUERIES
     padding-bottom: 30px;
   }
 
-
-
-}
+  }
 
