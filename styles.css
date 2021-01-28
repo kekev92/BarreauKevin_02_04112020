@@ -48,7 +48,7 @@ h3 {
 }
 
 p {
-  font-family: 200;
+  font-weight: 200;
   font-size: 14px;
 }
 
@@ -141,7 +141,7 @@ button {
   border-bottom-right-radius: 15px;
   background-color: #0065fc;
   color: #fff;
-  font-family: "Raleway"sans-serif;
+  font-family: "Raleway sans-serif" ;
   font-size: 16px;
 }
 
