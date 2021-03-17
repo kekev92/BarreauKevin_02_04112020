@@ -28,16 +28,28 @@ header{
   order : 1;
   
   text-align: center;
+
 }
 #nav-acti{
   
   flex : 1;
   order : 2;
   text-align: center; 
-}
-.nav-hover:hover{
+ 
+} 
+
+.hover :hover{
   border-top : 3px solid #0065fc;
   color : #0065fc;
+  cursor: pointer;
+}
+.hover{
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
 }
 #logo{
 
@@ -612,6 +624,9 @@ header{
   .container {
     width: calc(100%);
   }
+  .container h1{
+    margin-top: 86px;
+  }
   .logo{
     order: 0; 
     flex-basis: 60px;
@@ -623,7 +638,7 @@ header{
     text-decoration: #0065fc;
     flex-basis: auto
   }
-  .hebergement{
+  .HOVER{
     order: 2;
   }
   /* header */
