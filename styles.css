@@ -44,8 +44,8 @@ header{
   cursor: pointer;
 }
 .hover{
-  height: 80px;
-  width: 100%;
+
+  flex:2;
   display: flex;
   flex-direction: row;
 }
@@ -55,6 +55,7 @@ header{
 
   flex : 6;
   order : 0;
+  
   
 }
 #logo img{
@@ -561,26 +562,20 @@ header{
     flex-wrap: wrap;
 }
 
-#nav-heberg{
-    order : 2;
-    flex-basis: 50%;
-    border-bottom : 5px solid grey;
-}
-
-#nav-acti{
+.hover{
     order : 3;
     border-bottom : 5px solid grey;
-    flex-basis: 50%;
+    flex: 3;
 }
 
 #logo{
     order : 0;
-    flex-basis: 80%;    
+    ;    
 }
 
-#nav-inscri{
+.nav-inscri{
     order : 1;
-    flex-basis: 20%;    
+       flex: 3;
 }
 
 .nav-hover:hover{
