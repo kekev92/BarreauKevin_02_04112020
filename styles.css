@@ -34,7 +34,8 @@ header{
   
   flex : 1;
   order : 2;
-  text-align: center; 
+  text-align: center;
+  
  
 } 
 
@@ -69,6 +70,8 @@ header{
   flex : 1;
   order : 3;
   text-align: center;
+  font-weight: bold;
+  color: #0065fc; 
 }
 
 .flex-child{
@@ -558,32 +561,7 @@ MEDIA QUERIES
 
 @media screen and (max-width: 980px) {
  
-header{
-    flex-wrap: wrap;
-}
-
-.hover{
-    order : 3;
-    border-bottom : 5px solid grey;
-    flex: 3;
-}
-
-#logo{
-    order : 0;
-    ;    
-}
-
-.nav-inscri{
-    order : 1;
-       flex: 3;
-}
-
-.nav-hover:hover{
-    border-top : none;
-    border-bottom : 5px solid #0065fc; 
-    color : #0065fc
- }
-  .aside-populaire{
+   .aside-populaire{
     max-width: 630px;
     margin-right: auto;
     margin-left: auto;
@@ -613,6 +591,32 @@ header{
     margin-bottom: 40px;
   }
 
+}
+@media screen and (max-width:850) {
+
+  header{
+    flex-wrap: wrap;
+}
+  .hover{
+    order : 3;
+    border-bottom : 5px solid grey;
+    flex: 3;
+}
+
+#logo{
+    order : 0;
+    ;    
+}
+
+.nav-inscri{
+    order : 1;
+       flex: 3;
+}
+
+.nav-hover:hover{
+    border-top : none;
+    border-bottom : 5px solid #0065fc; 
+    color : #0065fc
 }
 
 @media screen and (max-width: 768px) {
