@@ -34,8 +34,7 @@ header{
   
   flex : 1;
   order : 2;
-  text-align: center;
-  
+  text-align: center; 
  
 } 
 
@@ -45,8 +44,8 @@ header{
   cursor: pointer;
 }
 .hover{
-
-  flex:2;
+  height: 80px;
+  width: 100%;
   display: flex;
   flex-direction: row;
 }
@@ -56,7 +55,6 @@ header{
 
   flex : 6;
   order : 0;
-  
   
 }
 #logo img{
@@ -70,8 +68,6 @@ header{
   flex : 1;
   order : 3;
   text-align: center;
-  font-weight: bold;
-  color: #0065fc; 
 }
 
 .flex-child{
@@ -561,7 +557,38 @@ MEDIA QUERIES
 
 @media screen and (max-width: 980px) {
  
-   .aside-populaire{
+header{
+    flex-wrap: wrap;
+}
+
+#nav-heberg{
+    order : 2;
+    flex-basis: 50%;
+    border-bottom : 5px solid grey;
+}
+
+#nav-acti{
+    order : 3;
+    border-bottom : 5px solid grey;
+    flex-basis: 50%;
+}
+
+#logo{
+    order : 0;
+    flex-basis: 80%;    
+}
+
+#nav-inscri{
+    order : 1;
+    flex-basis: 20%;    
+}
+
+.nav-hover:hover{
+    border-top : none;
+    border-bottom : 5px solid #0065fc; 
+    color : #0065fc
+ }
+  .aside-populaire{
     max-width: 630px;
     margin-right: auto;
     margin-left: auto;
@@ -591,32 +618,6 @@ MEDIA QUERIES
     margin-bottom: 40px;
   }
 
-}
-@media screen and (max-width:850) {
-
-  header{
-    flex-wrap: wrap;
-}
-  .hover{
-    order : 3;
-    border-bottom : 5px solid grey;
-    flex: 3;
-}
-
-#logo{
-    order : 0;
-    ;    
-}
-
-.nav-inscri{
-    order : 1;
-       flex: 3;
-}
-
-.nav-hover:hover{
-    border-top : none;
-    border-bottom : 5px solid #0065fc; 
-    color : #0065fc
 }
 
 @media screen and (max-width: 768px) {
