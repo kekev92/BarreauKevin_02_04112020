@@ -45,7 +45,7 @@ header{
 }
 .hover{
   height: 80px;
-  width: 100%;
+  flex: 3;
   display: flex;
   flex-direction: row;
 }
@@ -68,6 +68,8 @@ header{
   flex : 1;
   order : 3;
   text-align: center;
+  font-weight: bold;
+  color: #0065fc;
 }
 
 .flex-child{
@@ -635,11 +637,14 @@ header{
   .inscrire{
     order: 1;
     font-weight: bold;
-    text-decoration: #0065fc;
+    color: #0065fc;
     flex-basis: auto
   }
-  .HOVER{
-    order: 2;
+  .hover{
+    order: 3;
+  }
+  .hover a :hover{
+    border-bottom: 3px #0065fc solid; 
   }
   /* header */
   input{
