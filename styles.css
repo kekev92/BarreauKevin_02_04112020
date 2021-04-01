@@ -587,7 +587,7 @@ header{
 
 .nav-hover:hover{
     border-top : none;
-    border-bottom : 5px solid #0065fc; 
+    border-bottom : 5px solid #0065fc !important; 
     color : #0065fc
  }
   .aside-populaire{
